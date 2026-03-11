@@ -1,0 +1,26 @@
+public class Supply extends Document {
+   public int num;
+   public String date;
+   public int count;
+    String type;
+
+
+
+    public Supply (int num, String date, int count, String type)
+   {
+      this.num=num;
+      this.date=date;
+      this.count=count;
+      this.type=type;
+   }
+
+
+
+
+   public  void  printInfo()
+   {
+      System.out.println("Тип документа: Контракт на поставку товаров. Номер документа:  " + num + ", дата: " + date + " ,количество:  " + count + " , вид продукта: " + type + ".");
+   }
+
+
+    }
