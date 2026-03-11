@@ -1,0 +1,22 @@
+public class FinancialInvoice extends Document {
+    public int num;
+    public String date;
+    public double sum;
+    public int depNum;
+
+    public FinancialInvoice(int num, String date, double sum, int depNum) {
+        this.num = num;
+        this.date = date;
+        this.sum = sum;
+        this.depNum = depNum;
+    }
+
+
+
+    public void printInfo() {
+        System.out.println("Тип документа: Финансовая накладная. Номер документа: " + num + ". Дата документа: " + date +
+                ". Итоговая сума за месяц: " + sum + ". Код департамента:  " + depNum + ".");
+    }
+
+
+}
