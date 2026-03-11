@@ -1,0 +1,48 @@
+public class Rigistr {
+
+    public  int count;
+
+    private Document[] docs;
+
+
+    public  Rigistr() {
+
+        docs = new Document[10];
+        count = 0;
+    }
+
+    public void addDoc(Document doc) {
+        if (count < docs.length) {
+            docs[count]=doc;
+            count++;
+            System.out.println("Документ добавлен. ");
+        } else {
+            System.out.println("Невозможно добавить документ! Максимальное количество - 10!");
+        }
+
+    }
+
+    public void printOll() {
+        if (count == 0) {
+            System.out.println("Документов нет!");
+            return;
+        }
+        System.out.println("Список документов: ");
+        for (int i = 0; i < count; i++) {
+            System.out.println((i + 1) + ". ");
+            docs[i].printInfo();
+
+        }
+    }
+
+
+    public void Save() {
+
+    }
+
+    public void Info() {
+
+    }
+
+
+}
