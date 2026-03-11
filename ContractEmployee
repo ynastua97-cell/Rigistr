@@ -1,0 +1,23 @@
+public class ContractEmployee extends Document {
+    public int num;
+    public String date;
+    public String dateEnd;
+    public String nameEmployee;
+
+    public ContractEmployee(int num, String date, String dateEnd, String nameEmployee) {
+        this.num = num;
+        this.date = date;
+        this.dateEnd = dateEnd;
+        this.nameEmployee = nameEmployee;
+    }
+
+
+
+    public void printInfo() {
+        System.out.println("Тип документа: Контракт с сотрудником. Номер документа: " + num + ". Дата документа: " +
+                date + ". Дата окончания контракта: " + dateEnd + ". Имя сотрудника: " + nameEmployee + ".");
+
+    }
+
+
+}
