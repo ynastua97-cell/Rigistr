@@ -1,0 +1,20 @@
+
+public class Main {
+    public static void main(String[] args) {
+
+        Rigistr rigistr = new Rigistr();
+
+        Supply supply = new Supply(1, "12.10.2022", 6, "мягкие игрушки");
+        ContractEmployee contractEmployee = new ContractEmployee(2, "13.02.2009", "10.11.2022", "Федоров Федор Федорович");
+        FinancialInvoice financialInvoice = new FinancialInvoice(3, "12.12.2024", 190.999, 43);
+
+
+        rigistr.addDoc(supply);
+        rigistr.addDoc(contractEmployee);
+        rigistr.addDoc(financialInvoice);
+
+
+
+            rigistr.printOll();
+        }
+    }
